@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".FireBaseNotification.Fragments.SendNotificationFrag">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is first Fragment"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="50dp"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"/>
+    <EditText
+        android:id="@+id/etDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="title"/>
+
+    <Button
+        android:id="@+id/btnSendNotfication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:enabled="@{title.text.length() >2 &amp; etDetails.text.length() >2}"
+        android:text="send"/>
+
+
+</LinearLayout>
+
+</layout>

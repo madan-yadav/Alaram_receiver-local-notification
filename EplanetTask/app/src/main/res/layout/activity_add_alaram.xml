@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alram.AddAlaramActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textAlaramText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_timepicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:hint="No Alarm set"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="description..." />
+
+
+
+        <Button
+            android:id="@+id/button_timepicker"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:textAllCaps="false"
+            android:text="open time picker" />
+
+         <Button
+            android:id="@+id/button_save"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Save"
+            android:textAllCaps="false"
+             android:enabled="@{textAlaramText.text.length() >2 &amp; editTextDesc.text.length() >2}"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</layout>

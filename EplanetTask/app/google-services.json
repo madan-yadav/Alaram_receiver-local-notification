@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92124825046",
+    "project_id": "eplanet-2ac87",
+    "storage_bucket": "eplanet-2ac87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92124825046:android:138cd7f56beea1b0ec5077",
+        "android_client_info": {
+          "package_name": "com.example.eplanettask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92124825046-mmqp5523s38d1ledb42knivtnou4r7hn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9VbtdmST9CYJ86NOJcILa-lx3l0PMpK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92124825046-mmqp5523s38d1ledb42knivtnou4r7hn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
